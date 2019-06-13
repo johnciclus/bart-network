@@ -1,0 +1,29 @@
+OrdererOrgs:
+  - Name: Orderer
+    Domain: bartdigital.com.br
+    Specs:
+      - Hostname: orderer
+PeerOrgs:
+  - Name: Bart
+    Domain: bart.bartdigital.com.br
+    EnableNodeOUs: true
+    Template:
+      Count: 1
+    Users:
+      Count: 1
+
+  - Name: Creditors
+    Domain: creditors.bartdigital.com.br
+    EnableNodeOUs: true
+    Template:
+      Count: 1
+    Users:
+      Count: 1
+
+  - Name: Auditors
+    Domain: auditors.bartdigital.com.br
+    EnableNodeOUs: true
+    Template:
+      Count: 1
+    Users:
+      Count: 1

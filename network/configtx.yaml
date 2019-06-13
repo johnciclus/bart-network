@@ -1,0 +1,86 @@
+---
+Organizations:
+
+    - &Orderer
+        Name: Orderer
+        ID: OrdererMSP
+        MSPDir: crypto-config/ordererOrganizations/bartdigital.com.br/msp
+    - &Bart
+        Name: BartMSP
+        ID: BartMSP
+        MSPDir: crypto-config/peerOrganizations/bart.bartdigital.com.br/msp
+        AnchorPeers:
+            Host: peer0.bart.bartdigital.com.br
+            Port: 7051
+    - &Creditors
+        Name: CreditorsMSP
+        ID: CreditorsMSP
+        MSPDir: crypto-config/peerOrganizations/creditors.bartdigital.com.br/msp
+        AnchorPeers:
+            Host: peer0.creditors.bartdigital.com.br
+            Port: 8051
+    - &Auditors
+        Name: AuditorsMSP
+        ID: AuditorsMSP
+        MSPDir: crypto-config/peerOrganizations/auditors.bartdigital.com.br/msp
+        AnchorPeers:
+            Host: peer0.auditors.bartdigital.com.br
+            Port: 9051
+
+
+Orderer: &OrdererDefaults
+    OrdererType: solo
+    Addresses:
+        - orderer.bartdigital.com.br:7050
+    BatchTimeout: 2s
+    BatchSize:
+        MaxMessageCount: 10
+        AbsoluteMaxBytes: 99 MB
+        PreferredMaxBytes: 512 KB
+
+    # Kafka:
+    #     Brokers:
+    #         - 127.0.0.1:9092
+    Organizations:
+
+Application: &ApplicationDefaults
+    Organizations:
+
+Capabilities:
+    Global: &ChannelCapabilities
+        V1_1: true
+
+    Orderer: &OrdererCapabilities
+        V1_1: true
+
+    Application: &ApplicationCapabilities
+        V1_1: true
+
+Profiles:
+    OrdererGenesis:
+        Capabilities:
+            <<: *ChannelCapabilities
+        Orderer:
+            <<: *OrdererDefaults
+            Organizations:
+                - *Orderer
+            Capabilities:
+                <<: *OrdererCapabilities
+        Consortiums:
+            BartConsortium:
+                Organizations:
+                    - *Bart
+                    - *Creditors
+                    - *Auditors
+
+    ChannelAll:
+        Consortium: BartConsortium
+        Application:
+            <<: *ApplicationDefaults
+            Organizations:
+                - *Bart
+                - *Creditors
+                - *Auditors
+
+            Capabilities:
+                <<: *ApplicationCapabilities
