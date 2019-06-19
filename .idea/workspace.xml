@@ -2,7 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="144d3f73-8dc4-4d2b-8596-a7b0bde4d3fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/network/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/buy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/createWallet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/events.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/gateway/networkConnection.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/issue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/queryBlock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/queryTx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smart-contract/src/contract/BartContext.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smart-contract/src/contract/BartContract.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smart-contract/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bart-network.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bart-network.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/smart-contract/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/contract/FinContext.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/contract/FinContract.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/state/CDB.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/state/CDBState.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/state/State.ts" beforeDir="false" afterPath="$PROJECT_DIR$/smart-contract/src/state/State.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/state/enum/CDBStatus.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/tools/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/smart-contract/tools/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/configtx.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/network/configtx.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/crypto-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/network/crypto-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/network/docker-compose.yaml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,28 +44,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/smart-contract/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="17" column="16" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="204">
-                <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/network/docker-compose.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-756">
+              <caret line="39" selection-start-line="39" selection-end-line="39" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/index.ts">
+        <entry file="file://$PROJECT_DIR$/network/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="20" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/network/crypto-config.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/network/configtx.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="20" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="12" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/smart-contract/package-lock.json">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/contract/FinContext.ts">
+        <entry file="file://$PROJECT_DIR$/smart-contract/tsconfig.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" selection-start-column="7" selection-end-column="7" />
+            <state relative-caret-position="231">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/smart-contract/src/contract/BartContract.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="819">
+              <caret line="39" column="36" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/smart-contract/src/state/CreditGuarantee.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/smart-contract/src/contract/BartContext.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -44,43 +136,49 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/tools/build.sh">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>_byfn</find>
+      <find>finchain</find>
+      <find>FinContract</find>
+      <find>guarantee</find>
+      <find>fincontract</find>
       <find>COMPOSE_PROJECT_NAME</find>
-      <find>Fin</find>
-      <find>fin1.finchain.com</find>
-      <find>fin1</find>
-      <find>7051</find>
-      <find>BartConsortium</find>
-      <find>OrdererDefaults</find>
-      <find>ChannelCapabilities</find>
-      <find>7053</find>
-      <find>peer0.creditors.bartdigital.com.br</find>
-      <find>bartdigital.com.br</find>
-      <find>OrdererOrg</find>
-      <find>peer0.creditors.bartdigital.com.br:8051</find>
-      <find>channel</find>
-      <find>peer0.bart.bartdigital.com.br:7053</find>
+      <find>bartcontract</find>
+      <find>BartContract</find>
+      <find>smart-contract</find>
+      <find>smart-contract-bart</find>
+      <find>/src/github.com/</find>
+      <find>hyperledger_finchain_courser</find>
+      <find>smart</find>
+      <find>issue</find>
+      <find>LOCALMSPID</find>
+      <find>/opt/gopath/smart-contract/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/bart.bartdigital.com.b</find>
+      <find>CORE_PEER_MSPCONFIGPATH</find>
       <find>auditors</find>
-      <find>AuditorMSP</find>
-      <find>CORE_PEER_ADDRESS</find>
+      <find>smart-contract/dist</find>
+      <find>version</find>
+      <find>CreditorsMSP</find>
+      <find>createCreditGuarantee</find>
+      <find>src</find>
+      <find>channelall.block</find>
+      <find>api</find>
+      <find>dist</find>
+      <find>peerAddresses</find>
+      <find>BartMSP</find>
+      <find>7050</find>
+      <find>172</find>
     </findStrings>
+    <replaceStrings>
+      <replace>BartContext</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/network/crypto-config/peerOrganizations/bart.bartdigital.com.br/users</dir>
+      <dir>$PROJECT_DIR$/smart-contract/tools</dir>
+      <dir>$PROJECT_DIR$/network/crypto-config</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -88,27 +186,37 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/network/configtx.yaml" />
         <option value="$PROJECT_DIR$/network/crypto-config.yaml" />
-        <option value="$PROJECT_DIR$/network/docker-compose.yaml" />
+        <option value="$PROJECT_DIR$/client/src/state/CDBState.ts" />
+        <option value="$PROJECT_DIR$/api/createWallet.js" />
+        <option value="$PROJECT_DIR$/smart-contract/src/state/CreditGuarantee" />
+        <option value="$PROJECT_DIR$/smart-contract/src/state/CreditGuarantee.ts" />
+        <option value="$PROJECT_DIR$/smart-contract/src/contract/BartContext.ts" />
+        <option value="$PROJECT_DIR$/smart-contract/src/state/CreditGuaranteeState.ts" />
+        <option value="$PROJECT_DIR$/network/.env" />
+        <option value="$PROJECT_DIR$/api/events.js" />
+        <option value="$PROJECT_DIR$/api/queryBlock.js" />
+        <option value="$PROJECT_DIR$/api/queryTx.js" />
+        <option value="$PROJECT_DIR$/api/buy.js" />
+        <option value="$PROJECT_DIR$/api/issue.js" />
+        <option value="$PROJECT_DIR$/smart-contract/src/index.ts" />
+        <option value="$PROJECT_DIR$/smart-contract-bart/package.json" />
+        <option value="$PROJECT_DIR$/api/package.json" />
+        <option value="$PROJECT_DIR$/smart-contract-bart/dist/package.json" />
+        <option value="$PROJECT_DIR$/network/configtx.yaml" />
+        <option value="$PROJECT_DIR$/api/gateway/networkConnection.yaml" />
+        <option value="$PROJECT_DIR$/smart-contract/src/contract/BartContract.ts" />
+        <option value="$PROJECT_DIR$/smart-contract/package.json" />
+        <option value="$PROJECT_DIR$/smart-contract/dist/package.json" />
         <option value="$PROJECT_DIR$/Readme.md" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/bart-network.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/network/docker-compose.yaml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
     <option name="y" value="1107" />
     <option name="width" value="960" />
-    <option name="height" value="1053" />
+    <option name="height" value="1003" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -125,18 +233,12 @@
             <path>
               <item name="bart-network" type="b2602c69:ProjectViewProjectNode" />
               <item name="bart-network" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bart-network" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bart-network" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bart-network" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bart-network" type="462c0819:PsiDirectoryNode" />
               <item name="network" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bart-network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bart-network" type="462c0819:PsiDirectoryNode" />
+              <item name="smart-contract" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -146,21 +248,32 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/smart-contract/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/smart-contract" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/api" />
+      <recent name="$PROJECT_DIR$/network/tools" />
       <recent name="$PROJECT_DIR$/client" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/smart-contract/dist" />
+      <recent name="$PROJECT_DIR$/smart-contract/src" />
       <recent name="$PROJECT_DIR$/client" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/network" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -190,21 +303,30 @@
       <workItem from="1560372522027" duration="1985000" />
       <workItem from="1560426670784" duration="511000" />
       <workItem from="1560427526941" duration="9895000" />
+      <workItem from="1560444665087" duration="9380000" />
+      <workItem from="1560512258486" duration="5444000" />
+      <workItem from="1560528472294" duration="7192000" />
+      <workItem from="1560539055556" duration="2198000" />
+      <workItem from="1560781256061" duration="716000" />
+      <workItem from="1560785494594" duration="13249000" />
+      <workItem from="1560861766592" duration="16614000" />
+      <workItem from="1560947552051" duration="5838000" />
+      <workItem from="1560957520550" duration="1847000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21446000" />
+    <option name="totallyTimeSpent" value="83924000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="1107" width="960" height="1053" extended-state="4" />
+    <frame x="0" y="1107" width="960" height="1003" extended-state="4" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18569905" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27321237" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -214,7 +336,8 @@
       <window_info anchor="bottom" id="GraphQL" order="8" weight="0.3293348" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.31515813" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.31567797" />
+      <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -222,32 +345,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/smart-contract/node_modules/fabric-contract-api/test/typescript/smartcontract.js" />
+        <option value="$PROJECT_DIR$/smart-contract/node_modules/fabric-contract-api/test/typescript/smartcontract.js.map" />
+        <option value="$PROJECT_DIR$/smart-contract/node_modules/fabric-shim/test/typescript/chaincode.js" />
+        <option value="$PROJECT_DIR$/smart-contract/node_modules/fabric-shim/test/typescript/chaincode.js.map" />
+      </list>
+    </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/network/.env">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/configtx.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/docker-compose.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="61" column="2" selection-start-line="61" selection-start-column="2" selection-end-line="61" selection-end-column="2" />
-          <folding>
-            <element signature="e#44#1280#0" />
-            <element signature="e#1284#2730#0" />
-            <element signature="e#2734#4224#0" />
-            <element signature="e#4228#5714#0" />
-            <element signature="e#5718#7333#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/network/tools/configtxgen">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71842">
@@ -255,46 +362,246 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network/crypto-config.yaml">
+    <entry file="file://$PROJECT_DIR$/network/tools/monitordocker.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/createWallet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="19" />
+        <state relative-caret-position="272">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/state/enum/CDBStatus.ts">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/api/node_modules/typescript/lib/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1316">
+          <caret line="124" column="4" selection-start-line="124" selection-start-column="4" selection-end-line="124" selection-end-column="4" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/index.ts">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/smart-contract/dist/state/State.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/tools/build.sh">
+    <entry file="file://$PROJECT_DIR$/smart-contract/dist/state/State.js.map">
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="sourcemapFileViewerProvider" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/contract/FinContext.ts">
+    <entry file="file://$PROJECT_DIR$/api/queryBlock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/queryTx.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/events.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/buy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-contract/src/state/enum/CDBStatus.ts" />
+    <entry file="file://$PROJECT_DIR$/smart-contract/src/contract/FinContext.ts" />
+    <entry file="file://$PROJECT_DIR$/smart-contract/src/contract/FinContract.ts" />
+    <entry file="file://$PROJECT_DIR$/api/package-lock.json" />
+    <entry file="file://$PROJECT_DIR$/smart-contract/src/state/CDB.ts" />
+    <entry file="file://$PROJECT_DIR$/smart-contract/src/state/CDBState.ts" />
+    <entry file="file://$PROJECT_DIR$/smart-contract/dist/index.js.map">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/issue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-contract/dist/contract/BartContract.js.map">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/gateway/networkConnection.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-contract/dist/test" />
+    <entry file="file://$PROJECT_DIR$/smart-contract/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-contract/src/state/State.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-contract/dist/contract/BartContext.js.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="71" selection-start-column="71" selection-end-column="71" />
+        </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-contract/src/state/CreditGuaranteeState.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
           <folding>
-            <element signature="e#0#46#0" expanded="true" />
+            <element signature="e#0#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/package.json">
+    <entry file="file://$PROJECT_DIR$/smart-contract/dist/contract/BartContext.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-contract/dist/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        <state relative-caret-position="189">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-contract/dist/contract/BartContract.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-contract/dist/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/crypto-config/ordererOrganizations/bartdigital.com.br/ca/ca.bartdigital.com.br-cert.pem">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-contract/tools/build.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="204">
-            <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <first_editor relative-caret-position="2688">
+            <caret line="128" column="1" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-contract/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-contract/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-contract/src/contract/BartContract.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="39" column="36" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-contract/src/state/CreditGuarantee.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-contract/src/contract/BartContext.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/crypto-config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/configtx.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="20" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-contract/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/docker-compose.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-756">
+          <caret line="39" selection-start-line="39" selection-end-line="39" selection-end-column="32" />
         </state>
       </provider>
     </entry>

@@ -1,8 +1,7 @@
 ---
 Organizations:
-
     - &Orderer
-        Name: Orderer
+        Name: OrdererMSP
         ID: OrdererMSP
         MSPDir: crypto-config/ordererOrganizations/bartdigital.com.br/msp
     - &Bart

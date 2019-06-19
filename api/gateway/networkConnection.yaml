@@ -1,0 +1,60 @@
+---
+name: "bart-network"
+
+description: "Basic Network of the Bart Digital"
+
+version: "1.0"
+
+channels:
+  channelall:
+    orderers:
+      - Orderer
+    peers:
+      peer0.bart.bartdigital.com.br:
+        endorsingPeer: ?
+        chaincodeQuery: ?
+        ledgerQuery: ?
+        eventSource: true
+      peer0.creditors.bartdigital.com.br:
+        endorsingPeer: ?
+        chaincodeQuery: ?
+        ledgerQuery: ?
+        eventSource: true
+      peer0.auditors.bartdigital.com.br:
+        endorsingPeer: ?
+        chaincodeQuery: ?
+        ledgerQuery: ?
+        eventSource: true
+organizations:
+  Bart:
+    mspid: ../network/crypto-config/peerOrganizations/bart.bartdigital.com.br/msp
+    peers:
+      - BartMSP
+  Creditors:
+    mspid: ../network/crypto-config/peerOrganizations/creditors.bartdigital.com.br/msp
+    peers:
+      - CreditorsMSP
+  Auditors:
+    mspid: ../network/crypto-config/peerOrganizations/auditors.bartdigital.com.br/msp
+    peers:
+      - AuditorsMSP
+orderers:
+  orderer.bartdigital.com.br:
+    url: grpc://localhost:7050
+    grpcOptions:
+      ssl-target-name-override: orderer.bartdigital.com.br
+peers:
+  peer0.bart.bartdigital.com.br:
+    url: grpc://localhost:7051
+    grpcOptions:
+      ssl-target-name-override: peer0.bart.bartdigital.com.br
+
+  peer0.creditors.bartdigital.com.br:
+    url: grpc://localhost:8051
+    grpcOptions:
+      ssl-target-name-override: peer0.creditors.bartdigital.com.br
+
+  peer0.auditors.bartdigital.com.br:
+    url: grpc://localhost:8051
+    grpcOptions:
+      ssl-target-name-override: peer0.auditors.bartdigital.com.br
