@@ -9,6 +9,9 @@ The project's structure has the following directories:
 
 **network**: contains the files to set up and deploy the blockchain's network
 
+
+npm install -g node-gyp
+
 **1. Creation of Services**
 
 The process to set up and deploy new network are (commands executed in the network directory):
